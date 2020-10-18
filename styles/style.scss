@@ -1,0 +1,34 @@
+/// VARIABLES ///
+
+$titulos:  'IBM Plex Sans', sans-serif;
+$texto: 'IBM Plex Mono', monospace;
+$colortextooscuro: #060A24;
+$colortextoclaro: #ffffff;
+
+/// CARACTERISTICAS GENERALES ///
+
+body{
+    margin: 0;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+/// IMPORTS ///
+
+@import "header";
+
+@import "hellow";
+
+@import "episodios";
+
+@import "_dedondevenimos";
+
+@import "_entrevistas";
+
+@import "_topicos";
+
+@import "_novedades";
+
+@import "_footer";

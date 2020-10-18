@@ -1,0 +1,48 @@
+#topicos{
+    /// TITULO ///
+    .topicos-titulo{
+        font-family: $titulos;
+        font-size: 36px;
+        font-weight: 400;
+        margin: 8vh 5vw 4vh;
+    }
+
+    .topicos-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        /// ICONOS ///
+        .topicos-icono{
+            display: flex;
+            flex-direction: column;
+            padding: 5% 2%;
+
+            /// SUBTITULOS ///
+            .topicos-sub{
+                font-family: $titulos;
+                font-weight: 600;
+                font-size: 24px;
+                align-self: center;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+@media (min-width:780px){
+    #topicos{
+        padding: 11vh 15vw 6vh;
+        
+        .topicos-titulo{
+            font-size: 48px;
+            margin: 0 0 10vh 0;
+        }
+
+        .topicos-contenedor{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,168 @@
+
+header{
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 24px;
+        height: 24px;
+        margin: 10px 0px 10px 16px;
+    }
+
+    /// LINEAS MENU ///
+    .menu-icon{
+        margin: 10px 19px 10px 0px;
+        background-color: #060A24;
+        display: block;
+        width: 18px;
+        height: 2px;
+        position: relative;
+        transition: all .2s ease-out;
+      
+    &:before {
+        background-color: #060A24;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        transition: all .2s ease-out;
+    }
+      
+    &:after {
+        background-color: #060A24;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+        transition: all .2s ease-out;
+    }
+
+    }
+
+    .nav-icon{
+        transition: all 2s ease-out;
+    }
+
+    /// CHECK PARA MENU HAMBURGUESA ///
+
+     #btn-menu{
+         display: none;
+     }
+    
+     label{
+         display: block;
+         padding: 10px;
+         cursor: pointer;
+     }
+
+     /// MENU///
+
+     ul{
+         margin: 0;
+         list-style: none;
+         padding: 0;
+         display: flex;
+         flex-direction: column;
+
+         li{
+             display: flex;
+             justify-content: space-between;
+         }
+
+         a{
+             text-decoration: none;
+             color: $colortextoclaro;
+             font-family: $titulos;
+             font-size: 16px;
+             padding: 24px;
+         }
+     }
+
+     .menu{
+         position: absolute;
+         background-color: #0000EC;
+         width: 100%;
+         margin-left: -800px;
+         margin-top: 44px;
+         transition: all 0.5s;
+     }
+     
+     #btn-menu:checked ~ .menu{
+         max-height: 100%;
+         margin: 0;
+         margin-top: 44px;
+     }
+
+     #btn-menu:checked~ .nav-icon .menu-icon {
+        background: transparent;
+    }
+
+     #btn-menu:checked~ .nav-icon .menu-icon:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #btn-menu:checked~ .nav-icon  .menu-icon:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+}
+
+
+
+@media (min-width:780px){
+    header{
+        margin: 4vh 3vw;
+        flex-direction: row;
+    
+
+    img{
+        width: 36px;
+        height: 36px;
+    }
+
+    #btn-menu , .menu-icon , .nav-icon{
+        display: none;
+    }
+   
+    /// MENU ///
+    nav.menu{
+        background-color: #ffffff;
+        position: inherit;
+        margin-top: 0;
+        width: auto;
+        
+
+   ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       
+
+       li a{
+           display: block;
+           padding-left: 22px;
+           text-decoration: none;
+           color: $colortextooscuro;
+           font-family: $texto;
+           font-size: 16px;
+           margin: 0;
+
+           &:hover {
+            color: #00F3BB;
+            text-decoration: line-through;
+        }
+           &:active {
+            color: rgba(6, 10, 36, 0.56%);
+            text-decoration: line-through;
+        }
+       }
+       }
+   }
+}
+}

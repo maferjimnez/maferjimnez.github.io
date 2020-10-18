@@ -1,0 +1,55 @@
+#episodios{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+    padding: 12vh 4vw 27vh;
+
+    /// TITULO ///
+    .episodios-titulo{
+        font-family: $titulos;
+        font-size: 36px;
+        font-weight: 400;
+        color: $colortextoclaro;
+        line-height: 42px;
+        margin: 0;
+        margin-bottom: 4vh;
+    }
+
+    /// IFRAMES SPOTIFY ///
+    .spotify{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        iframe{
+            height: 232px;
+            width: 100%;
+            margin-bottom: 11px;
+            border: none;
+        }
+    }
+ }
+
+
+@media (min-width:780px){
+    #episodios{
+        clip-path: polygon(0 11%, 100% 0, 100% 81%, 0 100%);
+        padding: 25vh 8vw 35vh;
+
+        /// TITULO ///
+        .episodios-titulo{
+            font-size: 48px;
+            line-height: 62px;
+            margin: 0 0 6vh 7vw;
+        }
+
+        /// IFRAMES SPOTIFY ///
+        .spotify{
+            justify-content: space-between;
+            flex-flow: row wrap;
+
+            iframe{
+                width: 49%;
+            }
+        }
+    }
+}

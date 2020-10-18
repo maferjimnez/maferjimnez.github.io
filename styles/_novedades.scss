@@ -1,0 +1,68 @@
+#novedades{
+    padding: 1rem 0;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%);
+
+    .novedades-contenedor{
+        margin: 4rem 1rem;
+   
+        /// TITULO ///
+        .novedades-titulo{
+            font-family: $titulos;
+            font-weight: 400;
+            color: $colortextoclaro;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+    }
+
+    /// BOTON ESCUCHA LOS EPISODIOS ///
+    .btn-escucha{
+        display: inline-block;
+        padding: 13px 0;
+        width: 100%;
+        text-align: center;
+        font-family: $texto;
+        font-size: medium;
+        text-decoration: none;
+        font-weight: 700;
+        color: $colortextooscuro;
+        background-color: #00F3BB;
+        cursor: pointer;
+        transition: all 0.5s ease-in;
+
+        &:hover{
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            color: #ffffff;
+          
+          }
+    }
+ }
+}
+
+@media screen and (min-width:780px){
+    #novedades{
+        padding: 5rem 0;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%);
+        
+      .novedades-contenedor{
+        margin: 6rem 1rem 4rem;
+       
+        /// TITULO ///
+        .novedades-titulo{
+            font-size: 48px;
+        }
+
+        /// BOTON ESCUCHA LOS EPISODIOS ///
+        .btn-escucha{
+            margin: 1rem 33vw;
+            padding: 13px 0;
+            max-width: 30vw;
+            
+
+        }
+    }    
+}
+
+}

@@ -1,0 +1,45 @@
+#footer{
+    padding: 4vh 14vw 0;
+
+    /// TEXTO ///
+    .footer-texto{
+        font-family: $texto;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /// ICONOS REDES SOCIALES ///
+    .footer-social-media-contenedor{
+       display: flex;
+       justify-content: space-between;
+       padding: 0;
+
+       li{
+        list-style: none;
+        text-decoration: none;
+        
+        .footer-iconos{
+            width: 18px;
+
+            .fab{
+                color: $colortextooscuro;
+            }
+    
+        }
+       }
+    }
+}
+
+@media screen and (min-width:780px){
+    #footer{
+        padding: 4vh 1vw 0;
+        display: flex;
+        justify-content: space-between;
+
+        /// ICONOS REDES SOCIALES ///
+        .footer-social-media-contenedor{
+            width: 55vw;
+            max-width: 20vw;
+        }
+    }
+}

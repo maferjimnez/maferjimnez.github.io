@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pale Blue Dot.</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/cbd0672d05.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- HEADER + NAVBAR + MENU HAMBURGUESA -->    
+<header> 
+    <img src="imgs/logo.svg" alt="logo" class="logo">
+    
+    <input type="checkbox" id="btn-menu"/>
+    <label class="nav-icon" for="btn-menu"><span class="menu-icon"></span></label>
+
+    <nav class="menu" id="#home">
+        <ul>
+            <li><a href="#episodios">EPISODIOS</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#entrevistas">ENTREVISTAS</a></li>
+            <li><a href="#topicos">TÓPICOS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- HELLO DOT -->
+   <section class="hellow">
+  
+      <h1>
+         <span class="line1">Hello <s>world</s></span>
+         pale blue dot
+         <span class="dot">.</span>
+      </h1>
+
+      <p class="hellow-parrafo">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+
+      <a class="btn-conoce" href="#nosotros">CONOCÉ MÁS.</a>
+
+   </section>
+
+   <!--  EPISODIOS -->
+   <section id="episodios">
+       <h2 class="episodios-titulo">Episodios</h2>
+       
+       <div class="spotify">
+       <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" allow="encrypted-media"></iframe>
+       <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
+       <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
+       <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe>
+      </div>
+  
+   </section>
+
+   <!-- DE DONDE VENIMOS -->
+   <section id="nosotros">
+      
+    <img class="telefono" src="imgs/phone.png" alt="Teléfono mostrando actículo del NYT sobre Mary Allen Wilkes">
+    
+    <div class="nosotros-texto">
+    
+        <h2 class="nosotros-titulo">De dónde venimos</h2>
+    
+        <p class="nosotros-parrafo">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+        Universe, are challenged by this point of pale light.
+    <br>
+    <br>
+        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there
+        is no hint that help will come from elsewhere to save us from ourselves.
+        </p>
+    </div>
+   </section>
+
+    <!-- ENTREVISTAS -->
+    <section id="entrevistas">
+       
+        <h2 class="entrevistas-titulo">Invitadas/os Estelares</h2>
+
+        <div class="entrevistas-imagenes">
+            <img src="/imgs/woman-programmer-1.png" alt="Foto de Grace Hopper">
+            <img src="/imgs/woman-programmer-2.png" alt="Foto de Katie Bouman">
+            <img src="/imgs/woman-programmer-3.png" alt="Foto de Margaret Hamlinton">
+            <img src="/imgs/woman-programmer-4.png" alt="Foto de ERA Univac 1130">
+            <img src="/imgs/woman-programmer-5.png" alt="Operadoras con una Eniac">
+            <img src="/imgs/woman-programmer-6.png" alt="Foto de Susan Kare">
+        </div>
+
+    </section>
+
+    <!-- TOPICOS -->
+    <section id="topicos">
+       
+        <h2 class="topicos-titulo">Algunos de nuestros temas</h2>
+        
+        <section class="topicos-contenedor">
+          
+            <div class="topicos-icono">
+                <img src="/imgs/icon1.svg" alt="">
+                <h3 class="topicos-sub">Trabajo remoto</h3>
+            </div>
+           
+            <div class="topicos-icono">
+                <img src="/imgs/icon2.svg" alt="">
+                <h3 class="topicos-sub">Repensando la<br>
+                    programación</h3>
+            </div>
+          
+            <div class="topicos-icono">
+                <img src="/imgs/icon3.svg" alt="">
+                <h3 class="topicos-sub">Bases del código</h3>
+            </div>
+          
+            <div class="topicos-icono">
+                <img src="/imgs/icon4.svg" alt="">
+                <h3 class="topicos-sub">Seguridad infomática</h3>
+         
+            </div>
+        </section>
+    </section>
+
+    <!-- NOVEDADES -->
+    <section id="novedades">
+       <div class="novedades-contenedor">
+        <h2 class="novedades-titulo">¿Querés las últimas novedades?</h2>
+        
+        <a class="btn-escucha" href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+       </div>
+    </section>
+</main> 
+
+<footer id="footer">
+ 
+    <p class="footer-texto">© 2019 - Hello blue pale dot</p>
+ 
+    <ul class="footer-social-media-contenedor">
+ 
+        <li>
+            <a class="footer-iconos" href="https://open.spotify.com/show/3wMRZb2skAtJSp47GmaOOt" target="_blank" rel="noreferrer" aria-label="Ir a Spotify">
+                <i class="fab fa-spotify" aria-hidden="true"></i>
+            </a>
+        </li>
+ 
+        <li>
+            <a class="footer-iconos" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Ir a Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+ 
+        <li>
+            <a class="footer-iconos" href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Ir a Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i></a>
+        </li>
+ 
+        <li>
+            <a class="footer-iconos" href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Ir a Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+        </li>
+ 
+        <li>
+            <a class="footer-iconos" href="https://web.telegram.org/" target="_blank" rel="noreferrer" aria-label="Ir a Telegram">
+                <i class="fab fa-telegram" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+</html>
